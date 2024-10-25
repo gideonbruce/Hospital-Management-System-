@@ -4,6 +4,8 @@
  */
 package hospitalsystem;
 
+import javafx.application.Application;
+
 /**
  *
  * @author Bruce
