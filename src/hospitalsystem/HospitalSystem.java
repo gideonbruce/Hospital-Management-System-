@@ -6,7 +6,7 @@ package hospitalsystem;
 
 /**
  *
- * @author Bruce
+ * @author Bruce 
  */
 
 import javafx.application.Application;
