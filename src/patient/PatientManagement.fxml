@@ -1,0 +1,36 @@
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.PatientController"
+          alignment="center" hgap="10" vgap="10">
+    <Label text="First Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="firstNameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Last Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Age:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="ageField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Gender:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <ComboBox fx:id="genderComboBox" GridPane.rowIndex="3" GridPane.columnIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="male"/>
+                <String fx:value="female"/>
+                <String fx:value="other"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Label text="Address:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="addressField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Phone:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextField fx:id="phoneField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Medical History:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <TextArea fx:id="medicalHistoryArea" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+    <Button text="Add Patient" onAction="#handleAddPatient" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <Button text="Search Patient" onAction="#handleSearchPatient" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+    <Button text="Update Patient" onAction="#handleUpdatePatient" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+</GridPane>
+
